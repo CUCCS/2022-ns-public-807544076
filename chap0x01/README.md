@@ -4,7 +4,7 @@
 ## 实验环境
 宿主机： Windows 10
 virtualbox：
-* Kali-linux-2022.3 （截至 2020.9.10 官网最新版）
+* Kali-linux-2022.3 （截至 2022.9.10 官网最新版）
 * Debian 10 
 * Windows XP sp3
 
@@ -133,21 +133,33 @@ Network2:
 * [x] 所有节点均可以访问互联网
 
 victim-kali:
+
 ![](img/network1.png)
 
 victim-xp-1:
+
 ![](img/network2.png)
 
 victim-debian:
+
 ![](img/network3.png)
 
 victim-xp-2:
+
 ![](img/network4.png)
 
 attack-kali:
+
 ![](img/network5.png)
 
 ---
+
+## 遇到的问题及解决
+1. ping XP 系统时 ping 不通
+解决：询问同学后得知需要将 XP 默认的防火墙关闭
+
+2. 虚拟机挂载内部网络时没有效果
+解决：Google 后得知需要将作为网关的虚拟机开启，才能进行 IP 地址分配
 
 ## 参考资料
 
