@@ -179,9 +179,13 @@ sudo arpspoof -i eth0 -t 172.16.111.1 172.16.111.106
 
 ## 遇到的问题及解决
 使用 scapy 报错 `operation not permitted`
+
+
 解决：使用 sudo 提升权限
 
 scapy 发出的包未到达受害者主机
+
+
 解决：在 `ARP()` 前添加 `Ether()` 项即可
 
 ## 参考资料
